@@ -10,7 +10,24 @@
 		<module>springboot</module>
     <module>springmvc</module>
   </modules>
-
+	
+	<!-- 设定主仓库，按设定顺序进行查找。 -->
+	<repositories>
+		<repository>
+			<id>jeesite-repos</id>
+			<name>Jeesite Repository</name>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+		</repository>
+	</repositories>
+	
+	<!-- 设定插件仓库 -->
+	<pluginRepositories> 
+		<pluginRepository>
+			<id>jeesite-repos</id>
+			<name>Jeesite Repository</name>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+		</pluginRepository>
+	</pluginRepositories> 
 	<dependencies>
 		<!-- 文件上传下载组件 -->
 		<dependency>
@@ -24,7 +41,7 @@
 			<artifactId>jsr250-api</artifactId>
 			<version>1.0</version>
 		</dependency>
-		<!-- 测试jar包依�? -->
+		<!-- 测试jar包依�? -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>

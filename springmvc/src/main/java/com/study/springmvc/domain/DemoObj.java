@@ -1,10 +1,14 @@
 package com.study.springmvc.domain;
 
 public class DemoObj {
-	private String id;
+	private Long id;
 	private String name;
 	private String msg;
-	
+	public DemoObj(Long id,String name){
+		super();
+		this.id = id;
+		this.name = name;
+	}
 	
 	/**
 	 * @return the msg
@@ -18,18 +22,21 @@ public class DemoObj {
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
+	 
 	/**
 	 * @return the id
 	 */
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
+
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
+
 	/**
 	 * @return the name
 	 */

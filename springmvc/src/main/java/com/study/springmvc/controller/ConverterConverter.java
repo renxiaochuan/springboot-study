@@ -11,6 +11,7 @@ import com.study.springmvc.domain.DemoObj;
 public class ConverterConverter {
 	@RequestMapping(value="/convert",produces={"application/x-wisely"})
 	public @ResponseBody DemoObj convert(@RequestBody DemoObj obj){
+		System.out.println("ConverterConverter-convert");
 		return obj;
 	}
 }
